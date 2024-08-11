@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather">
+            <div id="wrap-search">
+                <input placeholder="Tìm kiếm hành phố" id="search">
+                <button id="btn-search">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+            </div>
+            <div class="weather-info">
+                <div>
+                    <h3 class="country">
+                        Hà Nội
+                    </h3>
+                    <h4 class="weather-date">20/20/2034</h4>
+                </div>
+                <div class="weather-summary-container">
+                    <img src="assets/weather/clouds.svg" width="160px" height="160px">
+                </div>
+                <div>
+                    <h1 class="temp">
+                        30 &#x2103
+                    </h1>
+                    <h4 class="location">
+                        Cliod
+                    </h4>
+                </div>
+                <div class="weather-conditions-container">
+                    <div class="condition-icon">
+                        <span class="material-symbols-outlined">
+                        water_drop
+                        </span>
+                        <div class="condition-icon">
+                            <h5>Humidity</h5>
+                            <h5 id="humidity">55%</h5>
+                        </div>
+                    </div>
+                    <div class="condition-icon">
+                       <span class="material-symbols-outlined">
+                            air
+                            </span>
+                        <div class="condition-icon">
+                            <h5>Wind speed</h5>
+                            <h5 id="speed">55%</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather-search-city section-message" style="display: none">
+                <img src="assets/message/search-city.png">
+                <div>
+                    <h3>Không tìm thấy dữ liệu</h3>
+                </div>
+            </div>
+
+            <div class="weather-search-error section-message" style="display: none">
+                <img src="assets/message/not-found.png">
+                <div>
+                    <h3>Không tim thấy thành phố</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

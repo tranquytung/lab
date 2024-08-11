@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="container">
+    <div class="nav">
+        <nav class="nav-pc">
+            <ul class="nav-list">
+                <li>
+                    <a href="../index.html" class="nav-link">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="./about.html" class="nav-link">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="./service.html" class="nav-link">Dịch vụ</a>
+                </li>
+                <li>
+                    <a href="./project.html" class="nav-link">Dự án</a>
+                </li>
+                <li>
+                    <a href="./contract.html" class="nav-link">Liên hệ</a>
+                </li>
+            </ul>
+        </nav>
+        <label class="nav-btn-bars" for="nav-mobile-input">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" name="" class="nav-input" id="nav-mobile-input">
+        <label class="nav-overlay" for="nav-mobile-input"></label>
+
+        <nav class="nav-mobile">
+            <label class="nav-mobile-close" for="nav-mobile-input">
+                <i class="fas fa-times"></i>
+            </label>
+            <ul class="nav-mobile-list">
+                <li>
+                    <i class="fas fa-home"></i>
+                    <a href="../index.html" class="nav-mobile-link">Trang chủ</a>
+                </li>
+                <li>
+                    <i class="far fa-address-card"></i>
+                    <a href="about.html" class="nav-mobile-link">Giới thiệu</a>
+                </li>
+                <li>
+                    <i class="fas fa-star-of-life"></i>
+                    <a href="service.html" class="nav-mobile-link">Dịch vụ</a>
+                </li>
+                <li>
+                    <i class="fas fa-tasks"></i>
+                    <a href="project.html" class="nav-mobile-link">Dự án</a>
+                </li>
+                <li>
+                    <i class="fas fa-address-book"></i>
+                    <a href="contract.html" class="nav-mobile-link">Liên hệ</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </div>
+    <div class="page-container">
+        Dự Án
+    </div>
+</div>
+</body>
+</html>
