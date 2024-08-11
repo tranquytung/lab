@@ -4,6 +4,7 @@ const rules = [
     isRequired("#fullname"),
     isRequired("#email"),
     isEmail("#email"),
+    isPassWord("#password"),
     isConfirm("#password_confirmation")
 ];
 const selectorRules = {};
@@ -118,4 +119,13 @@ function isConfirm(selector){
     }
 }
 
+function isPassWord(selector){
+    return{
+        selector,
+        test: function (value) {
+            const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+            return regex.test(value) ? undefined : "Mật khâủ tối thiểu 8 ký tự, phải chứa ít nhất một chữ cái in hoa, một chữ cái thường, và một chữ số!"
+        }
+    }
+}
 

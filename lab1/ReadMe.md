@@ -4,11 +4,11 @@
    - Hình ảnh laptop
    
    
-      <img src="./assets/image/desktop.png">
+      <img src="assets/readme/desktop.png" width="95%">
 
    
     - Hình ảnh mobile <br/><space>
 
-      <img src="./assets/image/mobile.png">
+      <img src="assets/readme/mobile.png">
    
    </pre>
